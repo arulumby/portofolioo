@@ -1,0 +1,282 @@
+/*Source kode untuk mempercantik halaman WEB*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Montserrat&display=swap');
+
+body{
+    color: black;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*style untuk bagian header-navbar*/
+header{
+    background-color: goldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: "montserrat";
+    font-weight: bolder;
+}
+
+.logo-web-saya{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.menu-navbar{
+    list-style: none;
+}
+
+.menu-navbar li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.menu-navbar li a{
+    transition: cubic-bezier(1, 0, 0, 1);
+}
+
+.menu-navbar li a:hover{
+    color: green;
+}
+
+/*style untuk kontek menu home*/
+
+.ruang-slide{
+    width: 100%;
+    background-image: url(berkas/img/bg.jpeg);
+    background-size: cover;
+    height: 110vh;
+}
+
+.kontent-home{
+    padding: 250px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/*style untuk button pada menu home*/
+.amrul{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: goldenrod;
+    cursor: pointer;   
+    font-weight: bolder;
+    size: 500px;
+    font-family: "montserrat";
+    transition: all 0.3s ease 0s;
+}
+
+.amrul a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.amrul a:hover{
+    color: white;
+    zoom: 1.5;
+}
+
+.hubungi{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: goldenrod;
+    cursor: pointer;   
+    font-weight: bolder;
+    size: 500px;
+    font-family: "montserrat";
+    transition: all 0.3s ease 0s;
+}
+
+.hubungi a {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.hubungi a:hover{
+    color: white;
+    zoom: 1.5;
+}
+
+/*style menu tentang saya*/
+.amrl-letsn{
+    color: white;
+    float: left;
+    padding: 10px 5%;
+    width: 60%;
+    text-align: center;
+}
+.gambar img{
+    width: 300;
+    position: relative;
+}
+
+/*membuat bagian skil*/
+.skil{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.judul{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.cakupan{
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px 0;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cakupan label,
+.cakupan span{
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+progress{
+    border-radius: 10px;
+    width: 50%;
+    height: 15px;
+    box-shadow: rgb(0, 0, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: grow 1s ease-out forwards;
+}
+
+@keyframes grow{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+progress::-webkit-progress-bar{
+    background-image: linear-gradient(rgb(253, 253, 253), rgb(194, 194, 190));
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value{
+    background-image: linear-gradient(to right, rgb(165, 165, 165), rgb(15, 15, 15));
+    border-radius: 5px;
+    box-shadow: 2px 0px 1px 1px;
+}
+
+.cakupan:hover{
+    cursor: pointer;
+    transition: linear 0.1s;
+    transform: scale(1.01);
+}
+
+/*kontent lainya*/
+article{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.lainya{
+    color: white;
+    text-align: center;
+}
+
+.FTI-UMBY{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(37, 150, 190);
+    cursor: pointer;   
+    font-weight: bolder;
+    size: 1000px;
+    font-family: "montserrat";
+    transition: all 0.3s ease 0s;
+}
+
+.FTI-UMBY a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*style menu kontak*/
+table{
+    padding: 50px;
+    color: white;
+}
+
+.kontak{
+    padding: 10px 20%;
+    color: white;
+    text-align: center;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+    column-gap: 10px;
+
+    /*ketebalan garis*/
+	-webkit-column-rule-width : 1px;
+	-moz-column-rule-width : 1px;
+	column-rule-width : 1px;	
+ 
+	/*pengaturan garis dengan format nilai jenis_garis warna*/
+	-webkit-column-rule : 1px solid goldenrod;
+	-moz-column-rule : 1px solid goldenrod;
+	column-rule : 1px solid goldenrod;
+}
+.kontak a img{
+    width: 30%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+/*style untuk footer*/
+footer{
+    display: flex;
+    padding: 5px 10%;
+    background-color: goldenrod;
+    justify-content: center;
+}
+
+.letsoin {
+    color: black;
+
+}
+small {
+    font-family: "montserrat";
+  }
+
+
+
+
+
+
