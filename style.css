@@ -52,7 +52,7 @@ li a{
 
 .ruang-slide{
     width: 100%;
-    background-image: url(berkas/img/bg.jpeg);
+    background-image: url(bg.jpeg);
     background-size: cover;
     height: 110vh;
 }
